@@ -1,0 +1,8 @@
+.p{
+    min-height: 43vh;
+    background: linear-gradient(135deg, #fd8153, #000000);
+    color: black;
+}
+.p p{
+    font-size: large;
+}

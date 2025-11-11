@@ -1,0 +1,120 @@
+/* Main container */
+.m {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Heading */
+.m h2 {
+  color: #ff6600;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Empty cart text */
+.m p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Cart item container */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+  font-size: 16px;
+}
+
+/* Item name */
+.flex span:first-child {
+  font-weight: 700;
+  color: #333;
+}
+
+/* Quantity buttons */
+.flex button {
+  background-color: #efa16d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.flex button:hover {
+  background-color: #e65c00;
+}
+
+/* Remove button */
+.text-red-600 {
+  color: #ff2b2b;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.2s ease;
+}
+
+.text-red-600:hover {
+  transform: scale(1.2);
+}
+
+/* Total section */
+.text-xl {
+  margin-top: 25px;
+  font-size: 22px;
+  color: #222;
+  background-color:#f0cb7d;
+  color: rgb(15, 15, 15);
+}
+
+/* Proceed button */
+.mt {
+  background-color:#f0cb7d;
+  color: rgb(15, 15, 15);
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mt:hover {
+  background-color: #15803d;
+  color: rgb(246, 240, 240);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .m {
+    padding: 20px;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .flex span,
+  .flex button {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  .mt {
+    width: 100%;
+  }
+}

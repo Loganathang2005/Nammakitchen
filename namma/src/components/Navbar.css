@@ -1,0 +1,138 @@
+/* Navbar main container */
+.navbar {
+  background: linear-gradient(90deg, #ff944d, #cc5200);
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Inside navbar flex */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Logo style */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Desktop navigation links */
+.nav-links-desktop {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-links-desktop li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-links-desktop li a:hover {
+  color: #62605f;
+}
+
+/* Login/Register & user section */
+.auth-links,
+.user-section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.login-btn, .register-btn, .logout-btn {
+  background-color: #b34700;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.logout-btn {
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn:hover,
+.register-btn:hover,
+.logout-btn:hover {
+  background-color: #e67300;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Mobile menu (below navbar) */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #cc5200;
+  padding: 10px 0;
+  text-align: center;
+  animation: slideDown 0.3s ease;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+.mobile-menu a:hover {
+  background-color: #b34700;
+}
+
+.logout-btn-mobile {
+  margin: 10px auto;
+  background-color: #fff;
+  color: #cc5200;
+  border: none;
+  padding: 6px 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logout-btn-mobile:hover {
+  background-color: #ffcc99;
+}
+
+/* Animation for smooth dropdown */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .nav-links-desktop,
+  .auth-links,
+  .user-section {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

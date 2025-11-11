@@ -1,0 +1,52 @@
+/* Contact Page Container */
+.text {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 30px;
+  background: #f2b272; /* light warm background */
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(242, 119, 31, 0.2);
+  text-align: center;
+  color: #4d2102;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Heading */
+.text h2 {
+  color: #f2771f;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Paragraphs */
+.text p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #5b2c02;
+  font-weight: 500;
+}
+
+/* Hover glow on text */
+.text p:hover {
+  color: #903f06;
+  transition: color 0.2s ease;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .text {
+    width: 90%;
+    margin: 60px auto;
+    padding: 20px;
+  }
+
+  .text h2 {
+    font-size: 1.6rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
+}
