@@ -45,12 +45,17 @@
 .auth-links,
 .user-section {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size:larger;
+  font-weight: bold;
 }
-
+.ajay{
+  color: #43daf1;
+}
 .login-btn, .register-btn, .logout-btn {
-  background-color: #b34700;
+  background-color: #5a2501;
   color: white;
   padding: 6px 10px;
   border-radius: 5px;

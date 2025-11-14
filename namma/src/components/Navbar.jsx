@@ -33,7 +33,7 @@ const Navbar = () => {
 
           {user ? (
             <div className="user-section">
-              <span>Hi, {user.username}</span>
+              <span>Hi, <span className="ajay">{user.username}</span></span>
               <button onClick={logout} className="logout-btn">Logout</button>
             </div>
           ) : (
